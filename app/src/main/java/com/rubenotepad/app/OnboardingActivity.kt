@@ -126,7 +126,14 @@ class OnboardingActivity : AppCompatActivity() {
             ) {
                 if (request.isForMainFrame) {
                     Log.w(TAG, "Promo embed failed: ${error.description}")
-                    showFallback(getString(R.string.promo_offline))
+                    // MIUI's WebView (Chromium build differs from AOSP) can invoke
+                    // WebViewClient callbacks off the main thread. Touching views
+                    // here directly causes CalledFromWrongThreadException on those
+                    // devices, which is a hard crash right at launch. Hop back to
+                    // the main thread before touching any UI.
+                    runOnUiThread {
+                        showFallback(getString(R.string.promo_offline))
+                    }
                 }
             }
         }
@@ -136,6 +143,10 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     private fun showFallback(message: String) {
+        // Defensive guard: never touch views after the activity has started
+        // finishing/destroying (e.g. a late/racing callback after the user
+        // already backed out or rotated the screen).
+        if (isFinishing || isDestroyed) return
         videoView.isVisible = false
         promoWeb.isVisible = false
         promoWeb.stopLoading()
