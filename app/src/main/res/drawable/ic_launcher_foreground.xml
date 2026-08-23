@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Sticky note sheet -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,30 h40 a5,5 0 0 1 5,5 v38 a5,5 0 0 1 -5,5 h-40 a5,5 0 0 1 -5,-5 v-38 a5,5 0 0 1 5,-5 z" />
+    <!-- Folded corner -->
+    <path
+        android:fillColor="#E8DA8A"
+        android:pathData="M62,30 L77,45 H67 A5,5 0 0 1 62,40 Z" />
+    <!-- Ruled lines -->
+    <path
+        android:strokeColor="#B7A44C"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M36,44 H58 M36,54 H68 M36,64 H68 M36,74 H52" />
+</vector>

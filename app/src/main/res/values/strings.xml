@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rube Note Pad</string>
+
+    <!-- Notes list -->
+    <string name="search_hint">Search notes</string>
+    <string name="new_note_a11y">Create a new note</string>
+    <string name="note_card_a11y">Note: %1$s</string>
+    <string name="empty_notes_title">No notes yet</string>
+    <string name="empty_notes_subtitle">Tap the + button to write your first note.\nEverything is stored privately on this device.</string>
+    <string name="empty_search_title">No matching notes</string>
+    <string name="empty_search_subtitle">Try a different search term.</string>
+    <string name="empty_archive_title">Nothing archived</string>
+    <string name="empty_archive_subtitle">Notes you archive will appear here.</string>
+
+    <!-- Toolbar menu -->
+    <string name="action_search">Search</string>
+    <string name="action_grid_view">Grid view</string>
+    <string name="action_list_view">List view</string>
+    <string name="action_sort_az">Sort A–Z</string>
+    <string name="action_sort_by_recent">Sort by recent</string>
+    <string name="action_show_archived">Show archived</string>
+    <string name="action_about">About Rube Note Pad</string>
+    <string name="about_message">Rube Note Pad v1.0.0\n\nA local-first note pad. Your notes never leave this device - no account, no cloud, no tracking.</string>
+
+    <!-- Note actions -->
+    <string name="action_pin">Pin</string>
+    <string name="action_unpin">Unpin</string>
+    <string name="action_share">Share</string>
+    <string name="action_archive">Archive</string>
+    <string name="action_unarchive">Unarchive</string>
+    <string name="action_delete">Delete</string>
+    <string name="delete_confirm_title">Delete note?</string>
+    <string name="delete_confirm_message_single">This note will be permanently deleted from this device.</string>
+    <plurals name="delete_confirm_message">
+        <item quantity="one">This note will be permanently deleted from this device.</item>
+        <item quantity="other">%d notes will be permanently deleted from this device.</item>
+    </plurals>
+
+    <!-- Editor -->
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Start writing…</string>
+    <string name="saving">Saving…</string>
+    <string name="saved">Saved</string>
+    <string name="save_failed">Save failed – changes kept on screen</string>
+    <string name="edited_prefix">Edited %1$s</string>
+    <string name="untitled_note">(Untitled)</string>
+    <string name="note_unavailable">This note could not be opened.</string>
+    <string name="storage_error">Local storage is unavailable. Please try again.</string>
+    <string name="back_a11y">Back to notes list</string>
+    <string name="more_actions_a11y">More actions</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Rube Note Pad</string>
+    <string name="onboarding_tagline">Your sticky notes, saved right on your device</string>
+    <string name="btn_continue">Continue</string>
+    <string name="subscribe_heading">Enjoying Rube Note Pad?</string>
+    <string name="subscribe_text">Subscribe to our YouTube channel for updates and tips.</string>
+    <string name="btn_subscribe">Subscribe</string>
+    <string name="promo_missing_asset">The promotional video file is missing from this installation.</string>
+    <string name="promo_playback_failed">Sorry - the video could not be played.</string>
+    <string name="promo_offline">The promotional video needs an internet connection.\nYou can still continue offline.</string>
+    <string name="btn_open_youtube">Watch on YouTube</string>
+    <string name="promo_video_a11y">Rube Note Pad promotional video</string>
+</resources>
